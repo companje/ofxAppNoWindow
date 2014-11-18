@@ -2,7 +2,6 @@
 #include "ofBaseApp.h"
 #include "ofGraphics.h"
 
-
 #if defined TARGET_OSX || defined TARGET_LINUX
 #include <stdlib.h>
 #include <string.h>
@@ -17,7 +16,6 @@ void reset_terminal_mode()
 {
     tcsetattr(0, TCSANOW, &orig_termios);
 }
-
 
 void set_conio_terminal_mode()
 {
